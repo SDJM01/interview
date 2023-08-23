@@ -34,38 +34,3 @@ $mainText = implode(' ', $textToCut);
 
 $text = implode($headText) . $mainText . "...";
 echo $text;
-
-
-
-
-
-
-
-
-
-
-
-
-//// получили ссылку
-//preg_match('/(?<=<a).+?(?=a>)/us', $text, $link);
-//// получили текст ссылки
-//preg_match('/(?<=>).+\b/u', implode('',$link), $linkText);
-////получаем текст выше описания
-//preg_match('/^.+?(?=(<\/i>))/us', $text, $headText);
-//// поулчили текст который необходимо обрезать
-//preg_match('/(<p><i>).+(<\/p>)$/us', $text, $textToCut);
-//
-//$textToCut = strip_tags($textToCut[0]);
-//
-//// разбиваем строку с помощью пробела
-//$textToCut = explode(' ',$textToCut);
-////debug($textToCut);
-//// Оставляем только 29 слов
-//$textToCut = array_slice($textToCut, 0 , 29);
-//// Собираем строку из получившегося массива
-//$mainText = implode(' ', $textToCut);
-//
-//$mainText = str_replace(implode('',$linkText), implode('',$link), $mainText);
-//
-//$text = $headText[0] . $mainText . "...";
-//echo $text;
